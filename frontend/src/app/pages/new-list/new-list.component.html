@@ -1,0 +1,8 @@
+<div class="centered-content">
+    <div class="modal-box form-group">
+        <h1 class="title">Create a new list</h1>
+        <input type="text" #listInput class="has-background-light form-control" placeholder="Enter Name">
+        <button class="btn white-text" (click)="addItem(listInput.value)" [disabled]="listInput.value === ''">Add</button>
+        <button class="btn white-text" routerLink ="/">Cancel</button>
+    </div>
+</div>
